@@ -11,7 +11,7 @@ module fifo #(parameter DSIZE = 8,
 
 
 wire    [ASIZE-1 : 0]   waddr, raddr;
-wire    [ASIZE : 0]     wptr, rptr, wq2_rptr,rq2_wptr;
+wire    [ASIZE : 0]     wptr, rptr, wq2_rptr,rq2_rptr;
 
 sync_r2w #( ASIZE)      sync_r2w
                         (
@@ -37,7 +37,7 @@ fifomem  #( DSIZE,  ASIZE)  fifomem
                                 .raddr(raddr),
                                 .wclken(winc), 
                                 .wfull(wfull), 
-                                .wclk(wclk)
+                                .wclk(wclk),
                             );
 
 rptr_empty #( ASIZE)    rptr_empty
