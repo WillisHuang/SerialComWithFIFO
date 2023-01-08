@@ -6,9 +6,9 @@
 3. Transfer the datas to the chip through the selected interface.
 
 ## Architecture Overview with Transmitter and Receiver
-
+![image](https://github.com/WillisHuang/SerialComWithFIFO/blob/main/architecture/tx_rx.png)
 ### Architecture of transmitter
-
+![image](https://github.com/WillisHuang/SerialComWithFIFO/blob/main/architecture/tx.png)
 ### Architecture of Receiver
-
+![image](https://github.com/WillisHuang/SerialComWithFIFO/blob/main/architecture/rx.png)
 
